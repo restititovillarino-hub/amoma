@@ -32,6 +32,15 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          VITE_FIREBASE_API_KEY: AIzaSyA1A-kdxg7LdyT_YfuM1MhNoBnw5yZ3rmc
+          VITE_FIREBASE_AUTH_DOMAIN: amoma-66f5c.firebaseapp.com
+          VITE_FIREBASE_PROJECT_ID: amoma-66f5c
+          VITE_FIREBASE_STORAGE_BUCKET: amoma-66f5c.firebasestorage.app
+          VITE_FIREBASE_MESSAGING_SENDER_ID: "46468547387"
+          VITE_FIREBASE_APP_ID: "1:46468547387:web:294adb38144d71ccb66d1e"
+          VITE_FIREBASE_MEASUREMENT_ID: G-KKF10SHE68
+          VITE_OPENAI_API_KEY: ${{ secrets.VITE_OPENAI_API_KEY }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
