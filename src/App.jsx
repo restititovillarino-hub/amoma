@@ -21,7 +21,7 @@ function PrivateRoute({ children }) {
 
 function AppRoutes() {
   return (
-    <Router>
+    <Router basename="/amoma">
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
